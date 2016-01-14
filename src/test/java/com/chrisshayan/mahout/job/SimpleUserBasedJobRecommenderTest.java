@@ -16,7 +16,7 @@ public class SimpleUserBasedJobRecommenderTest {
     @Test
     public void getRecommendation() throws Exception {
         final SimpleUserBasedJobRecommender recommender = new SimpleUserBasedJobRecommender();
-        final List<RecommendedItem> recommendation = recommender.getRecommendation(528);
+        final List<RecommendedItem> recommendation = recommender.getRecommendation(83);
 
         assertNotNull(recommendation);
 
