@@ -1,0 +1,12 @@
+# IntelliJ files
+*.iml
+.idea
+
+# eclipse files
+.settings/
+.project
+.classpath
+.externalToolBuilders/
+
+# maven build
+target/
