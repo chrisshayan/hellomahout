@@ -29,7 +29,7 @@ public class SimpleUserBasedJobRecommender {
         final DataModel dataModel = new FileDataModel(sampleDataUserItemScore);
 
         final UserSimilarity userSimilarity = new PearsonCorrelationSimilarity(dataModel);
-        final UserNeighborhood userNeighborhood = new NearestNUserNeighborhood(2, userSimilarity, dataModel);
+        final UserNeighborhood userNeighborhood = new NearestNUserNeighborhood(20, userSimilarity, dataModel);
 
         Recommender recommender = new org.apache.mahout.cf.taste.impl.recommender.GenericUserBasedRecommender(dataModel, userNeighborhood, userSimilarity);
 
